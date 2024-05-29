@@ -277,6 +277,19 @@ html{
     width: 0%;
     animation: 2s javascript forwards;
 }
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegúrate de que el z-index sea suficientemente alto */
+    /* Añade otros estilos que necesites, por ejemplo: */
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
 @keyframes javascript {
     0%{width: 0%;}
     100%{width: 75%;}

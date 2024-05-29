@@ -77,4 +77,6 @@
     border-radius: 20px;
     cursor: pointer;
   }
-  
+  .p {
+    margin: auto;
+  }
