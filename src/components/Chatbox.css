@@ -1,0 +1,80 @@
+/* Chatbox.css */
+.chatbox-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+  }
+  
+  .chatbox-container.open {
+    transform: translateY(0);
+  }
+  
+  .chatbox-header {
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatbox-content {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .message-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    max-width: 70%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .message.received {
+    background-color: #fff;
+    align-self: flex-start;
+  }
+  
+  .message.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .input-container button {
+    background-color: #128c7e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
