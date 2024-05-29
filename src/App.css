@@ -283,11 +283,20 @@ html{
     bottom: 20px;
     right: 20px;
     z-index: 1000; /* Asegúrate de que el z-index sea suficientemente alto */
-    /* Añade otros estilos que necesites, por ejemplo: */
     background-color: #25D366;
     border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* padding: 15px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .whatsapp-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .whatsapp-button img {
+    width: 48px; /* Ajusta el tamaño según sea necesario */
+    height: 48px;
   }
   
 @keyframes javascript {

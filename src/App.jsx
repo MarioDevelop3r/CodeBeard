@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Contact from './components/Contact';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 // import AboutMe from './components/AboutMe';
 // import Curriculum from './components/Curriculum';
 import Header from './components/Header';
@@ -20,10 +20,7 @@ const App = () => {
           <Section />
           <Portfolio />
           <Contact />
-          {/* <AboutMe /> */}
-          {/* <Skills /> */}
-          {/* <Curriculum /> */}
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </Router>
     </>
