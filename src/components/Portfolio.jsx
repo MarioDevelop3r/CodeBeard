@@ -1,14 +1,14 @@
-
+import "../components/portfolio.css";
 
 const Portfolio = () => {
     // Array de imágenes aleatorias
     const randomImages = [
-        "https://via.placeholder.com/300",
-        "https://via.placeholder.com/300",
-        "https://via.placeholder.com/300",
-        "https://via.placeholder.com/300",
-        "https://via.placeholder.com/300",
-        "https://via.placeholder.com/300"
+        "https://via.placeholder.com/300/FF0000",
+        "https://via.placeholder.com/300/00FF00",
+        "https://via.placeholder.com/300/0000FF",
+        "https://via.placeholder.com/300/FFFF00",
+        "https://via.placeholder.com/300/00FFFF",
+        "https://via.placeholder.com/300/FF00FF"
     ];
 
     return (
@@ -19,7 +19,7 @@ const Portfolio = () => {
                     {/* Mapeo de las imágenes aleatorias */}
                     {randomImages.map((image, index) => (
                         <div className="proyecto" key={index}>
-                            <img src={image} alt="" />
+                            <img src={image} alt={`Proyecto ${index + 1}`} />
                             <div className="overlay">
                                 <h3>Diseño Creativo</h3>
                                 <p>Fotografía</p>
@@ -33,4 +33,5 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
+
 

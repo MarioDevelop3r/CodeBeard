@@ -1,0 +1,63 @@
+.portafolio {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .portafolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .portafolio h2 {
+    font-size: 48px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .portafolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los proyectos */
+  }
+  
+  .portafolio .proyecto {
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+  }
+  
+  .portafolio .proyecto img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .portafolio .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portafolio .proyecto:hover .overlay {
+    opacity: 1;
+  }
+  
+  .portafolio .proyecto .overlay h3,
+  .portafolio .proyecto .overlay p {
+    margin: 5px 0;
+  }
+  

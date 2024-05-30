@@ -215,54 +215,54 @@ html{
 }
 /* SECCION S K I L L S */
 .skills{
-    background-color: #252A2E;
+background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
 }
 .skills .contenido-seccion{
-    max-width: 1100px;
+max-width: 1100px;
     margin: auto;
 }
 .skills h2{
-    font-size: 48px;
+font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
 .skills .fila{
-    display: flex;
+display: flex;
 }
 .skills .fila .col{
-    width: 50%;
+width: 50%;
     padding: 0 20px;
 }
 .skills .fila .col h3{
-    font-size: 28px;
+font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
 .skills .skill > span{
-    font-weight: bold;
+font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
 .skills .skill .barra-skill{
-    height: 8px;
+height: 8px;
     width: 80%;
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
 }
 .skills .skill .progreso{
-    background-color: #1CB698;
+background-color: #1CB698;
     position: absolute;
     top: 0;
     left: 0;
     height: 8px;
 }
 .skills .skill .barra-skill span{
-    position: absolute;
+position: absolute;
     height: 40px;
     width: 40px;
     background-color: #1CB698;
@@ -275,7 +275,7 @@ html{
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
-    width: 0%;
+width: 0%;
     animation: 2s javascript forwards;
 }
 @keyframes javascript {
@@ -284,7 +284,7 @@ html{
 }
 
 .skills .skill .htmlcss{
-    width: 0%;
+width: 0%;
     animation: 2s htmlcss forwards;
 }
 @keyframes htmlcss {
@@ -293,7 +293,7 @@ html{
 }
 
 .skills .skill .photoshop{
-    width: 0%;
+width: 0%;
     animation: 2s photoshop forwards;
 }
 @keyframes photoshop {
@@ -302,7 +302,7 @@ html{
 }
 
 .skills .skill .wordpress{
-    width: 0%;
+width: 0%;
     animation: 2s wordpress forwards;
 }
 @keyframes wordpress {
@@ -311,7 +311,7 @@ html{
 }
 
 .skills .skill .drupal{
-    width: 0%;
+width: 0%;
     animation: 2s drupal forwards;
 }
 @keyframes drupal {
@@ -320,7 +320,7 @@ html{
 }
 
 .skills .skill .comunicacion{
-    width: 0%;
+width: 0%;
     animation: 2s comunicacion forwards;
 }
 @keyframes comunicacion {
@@ -329,7 +329,7 @@ html{
 }
 
 .skills .skill .trabajo{
-    width: 0%;
+width: 0%;
     animation: 2s trabajo forwards;
 }
 @keyframes trabajo {
@@ -338,7 +338,7 @@ html{
 }
 
 .skills .skill .creatividad{
-    width: 0%;
+width: 0%;
     animation: 2s creatividad forwards;
 }
 @keyframes creatividad {
@@ -347,7 +347,7 @@ html{
 }
 
 .skills .skill .dedicacion{
-    width: 0%;
+width: 0%;
     animation: 2s dedicacion forwards;
 }
 @keyframes dedicacion {
@@ -356,7 +356,7 @@ html{
 }
 
 .skills .skill .proyect{
-    width: 0%;
+width: 0%;
     animation: 2s proyect forwards;
 }
 @keyframes proyect {
@@ -681,13 +681,13 @@ footer .arriba{
     }
 
     .skills .fila{
-        display: block;
+    display: block;
     }
     .skills .fila .col{
-        width: 100%;
+    width: 100%;
     }
     .skills .fila .col .barra-skill{
-        width: 100%;
+    width: 100%;
     }
 
     .curriculum .fila{
