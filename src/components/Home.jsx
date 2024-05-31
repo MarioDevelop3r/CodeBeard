@@ -1,8 +1,8 @@
 import './home.css';  // Archivo CSS para estilos personalizados
 
-const Logo = [
-  "/public/klipartz.com.svg"
-] // Definir la ruta de la imagen como una constante
+const Logo = 
+  "https://i.imgur.com/NVGqkb1.png"
+
 
 const Home = () => {
   return (
