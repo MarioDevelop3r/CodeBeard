@@ -9,10 +9,10 @@ const Home = () => {
           <img src="/public/klipartz.com.png" alt="CodeBeard" />
         </div>
         <div className="texto-banner">
-          <h1>HI! I AM CODEBEARD</h1>
-          <p>Construyo software excepcionalmente bueno.</p>
+          <h1>CODEBEARD</h1>
+          <p>Nos especializamos en desarrollar software de calidad excepcional.</p>
           <p>Mi principal experiencia es la creación de productos web seguros y escalables.</p>
-          <a href="#portfolio" className="cta-button">Vamos</a>
+          <a href="#portafolio" className="cta-button">Vamos</a>
         </div>
       </div>
     </section>
