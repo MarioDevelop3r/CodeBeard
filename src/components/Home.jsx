@@ -1,6 +1,6 @@
 import './home.css';  // Archivo CSS para estilos personalizados
 
-const imagenURL = "/public/klipartz.com.svg"; // Definir la ruta de la imagen como una constante
+const imagenURL = "../../public/klipartz.com.png"; // Definir la ruta de la imagen como una constante
 
 const Home = () => {
   return (
