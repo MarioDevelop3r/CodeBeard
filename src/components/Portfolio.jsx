@@ -3,12 +3,12 @@ import "../components/portfolio.css";
 const Portfolio = () => {
     // Array de imágenes aleatorias
     const randomImages = [
-        "https://via.placeholder.com/300/FF0000",
-        "https://via.placeholder.com/300/00FF00",
-        "https://via.placeholder.com/300/0000FF",
-        "https://via.placeholder.com/300/FFFF00",
-        "https://via.placeholder.com/300/00FFFF",
-        "https://via.placeholder.com/300/FF00FF"
+        "https://via.placeholder.com/300/",
+        "https://via.placeholder.com/300/",
+        "https://via.placeholder.com/300/",
+        "https://via.placeholder.com/300/",
+        "https://via.placeholder.com/300/",
+        "https://via.placeholder.com/300/"
     ];
 
     return (
