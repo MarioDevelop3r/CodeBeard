@@ -20,9 +20,9 @@ const Header = () => {
                 </div>
                 <nav id="nav" className={menuVisible ? 'responsive' : ''}>
                     <ul>
-                        <li><a href="#inicio" onClick={seleccionar}>Servicios</a></li>
-                        <li><a href="#portafolio" onClick={seleccionar}>Portafolio</a></li>
-                        <li><a href="#contacto" onClick={seleccionar}>Contáctanos</a></li>
+                        <li><a href="#inicio" onClick={seleccionar}>SERVICIOS</a></li>
+                        <li><a href="#portafolio" onClick={seleccionar}>PORTAFOLIO</a></li>
+                        <li><a href="#contacto" onClick={seleccionar}>CONTACTO</a></li>
                     </ul>
                 </nav>
                 <div className="nav-responsive" onClick={mostrarOcultarMenu}>
