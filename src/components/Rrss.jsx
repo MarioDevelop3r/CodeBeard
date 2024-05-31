@@ -10,11 +10,11 @@ const Rrss = () => {
     ];
 
     const icons = [
-        { name: 'facebook', src: "/src/assets/img/logotipo-circular-de-facebook.png" },
-        { name: 'instagram', src: "/src/assets/img/instagram_internet_media_network_social_icon_123258.png"  },
-        { name: 'github', src: "/src/assets/img/github-logo_icon-icons.com_73546.png"  },
-        { name: 'linkedin', src: "/src/assets/img/linkedin_black_logo_icon_147114.png"  },
-        { name: 'youtube', src: "/src/assets/img/social_youtube_23.png"}
+        { name: 'facebook', src: "https://img.icons8.com/?size=100&id=3U3uC2N2yrSr&format=png&color=000000" },
+        { name: 'instagram', src: "https://img.icons8.com/?size=100&id=ms3ftPftW1cW&format=png&color=000000"  },
+        { name: 'github', src: "https://img.icons8.com/?size=100&id=zehXPLJSAbBB&format=png&color=000000"  },
+        { name: 'linkedin', src: "https://img.icons8.com/?size=100&id=Ceo5wAFAEmmf&format=png&color=000000"  },
+        { name: 'youtube', src: "https://img.icons8.com/?size=100&id=1oacwQbZsiyi&format=png&color=000000"}
     ];
 
     return (
