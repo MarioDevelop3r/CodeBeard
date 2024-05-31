@@ -1,12 +1,13 @@
-
 import './home.css';  // Archivo CSS para estilos personalizados
+
+const imagenURL = "/public/klipartz.com.svg"; // Definir la ruta de la imagen como una constante
 
 const Home = () => {
   return (
     <section id="inicio" className="home-section">
       <div className="contenido-banner">
         <div className="imagen-banner">
-          <img src="/public/klipartz.com.svg" alt="CodeBeard" />
+          <img src={imagenURL} alt="CodeBeard" /> {/* Utilizar la constante para la ruta de la imagen */}
         </div>
         <div className="texto-banner">
           <h1>CODEBEARD</h1>
