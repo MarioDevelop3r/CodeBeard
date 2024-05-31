@@ -6,7 +6,7 @@ const Home = () => {
     <section id="inicio" className="home-section">
       <div className="contenido-banner">
         <div className="imagen-banner">
-          <img src="/public/klipartz.com.png" alt="CodeBeard" />
+          <img src="/public/klipartz.com.svg" alt="CodeBeard" />
         </div>
         <div className="texto-banner">
           <h1>CODEBEARD</h1>

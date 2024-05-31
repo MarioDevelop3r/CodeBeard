@@ -24,6 +24,7 @@
 }
 
 .imagen-banner img {
+  padding-top: 50px;
   max-width: 90%;
   height: auto;
 }
