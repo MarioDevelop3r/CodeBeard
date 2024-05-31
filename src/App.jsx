@@ -15,9 +15,7 @@ const App = () => {
         <Whatsapp />
         <div>
           <Header />
-
           <Home />
-          
           <Portfolio />
           <Contact />
           <Footer />
