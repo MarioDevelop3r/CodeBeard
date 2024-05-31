@@ -5,8 +5,9 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
-import Section from './components/Section';
 import Whatsapp from './components/Whatsapp';
+import Home from './components/Home';
+import Services from './Services';
 
 const App = () => {
   return (
@@ -15,7 +16,9 @@ const App = () => {
         <Whatsapp />
         <div>
           <Header />
-          <Section />
+          
+          <Home />
+          <Services />
           <Portfolio />
           <Contact />
           <Footer />

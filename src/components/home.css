@@ -1,0 +1,171 @@
+/* Estilos para la sección Home */
+
+.home-section {
+  background-color: #1e2326;  /* Color de fondo */
+  color: #fff;  /* Color del texto */
+  padding: 50px 20px;
+}
+
+.contenido-banner {
+  display: flex;
+  flex-direction: row;  /* Para alinear la imagen y el texto en fila */
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  gap: 20px;  /* Espacio entre la imagen y el texto */
+}
+
+.imagen-banner {
+  flex: 1;
+  text-align: center;
+}
+
+.imagen-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.texto-banner {
+  flex: 1;
+}
+
+.texto-banner h1 {
+  font-size: 48px;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.texto-banner p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cta-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  margin-top: 20px;
+  z-index: 10;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1CB698;
+  color: #1e2326;
+}
+
+/* Estilos adicionales para la sección de contacto */
+
+.contacto {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.contacto .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 48px;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contacto .fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacto .col {
+  flex: 1;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.contacto .col input, 
+.contacto .col textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #252A2E;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.contacto .col textarea {
+  height: 180px;
+  resize: none;
+}
+
+.contacto .enviar-mensaje {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.contacto .enviar-mensaje .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1CB698;
+  z-index: -1;
+  transition: 1s;
+}
+
+.contacto .enviar-mensaje:hover .overlay {
+  width: 100%;
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+  .contenido-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagen-banner,
+  .texto-banner {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .texto-banner h1 {
+    font-size: 36px;
+  }
+
+  .texto-banner p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    margin-top: 15px;
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}

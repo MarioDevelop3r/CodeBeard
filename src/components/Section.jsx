@@ -1,7 +1,5 @@
 import Rrss from "./Rrss";
 
-
-
 const Section = () => {
     return (
         <section id="inicio" className="inicio">
@@ -12,7 +10,7 @@ const Section = () => {
                 <h1 className="text ">CODEBEARD</h1>
                 <h2>Developers</h2>
                 <Rrss />
-                
+
             </div>
         </section>
     );
