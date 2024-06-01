@@ -10,11 +10,11 @@ const Rrss = () => {
     ];
 
     const icons = [
-        { name: 'facebook', src: "https://img.icons8.com/?size=100&id=3U3uC2N2yrSr&format=png&color=000000" },
-        { name: 'instagram', src: "https://img.icons8.com/?size=100&id=ms3ftPftW1cW&format=png&color=000000"  },
-        { name: 'github', src: "https://img.icons8.com/?size=100&id=zehXPLJSAbBB&format=png&color=000000"  },
-        { name: 'linkedin', src: "https://img.icons8.com/?size=100&id=Ceo5wAFAEmmf&format=png&color=000000"  },
-        { name: 'youtube', src: "https://img.icons8.com/?size=100&id=1oacwQbZsiyi&format=png&color=000000"}
+        { name: 'facebook', src: "https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" },
+        { name: 'instagram', src: "https://img.icons8.com/?size=100&id=tN8gey28ngcJ&format=png&color=000000"  },
+        { name: 'github', src: "https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000"  },
+        { name: 'linkedin', src: "https://img.icons8.com/?size=100&id=114445&format=png&color=000000"  },
+        { name: 'youtube', src: "https://img.icons8.com/?size=100&id=19318&format=png&color=000000"}
     ];
 
     return (
