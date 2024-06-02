@@ -29,6 +29,7 @@
 
 .texto-banner {
   flex: 1;
+  padding-top: 20px;
   padding: 20px;
   border-radius: 10px; /* Opcional: para bordes redondeados */
 }
@@ -37,6 +38,7 @@
   font-size: 58px;
   font-family: 'Righteous', cursive;
   margin-bottom: 20px;
+  padding-top: 100px;
   text-align: center;
 }
 
