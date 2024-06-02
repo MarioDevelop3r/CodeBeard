@@ -163,6 +163,7 @@
   .texto-banner {
     flex: none;
     max-width: 100%;
+    max-height: 50%;
   }
 
   .texto-banner h1 {
