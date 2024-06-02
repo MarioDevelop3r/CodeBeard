@@ -115,7 +115,7 @@
     position: relative;
     z-index: 1;
     max-width: 100%;
-    padding: 60px;
+    padding: 10px;
     background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
     border-radius: 10px; /* Opcional: para bordes redondeados */
   }
