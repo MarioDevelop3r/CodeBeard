@@ -115,7 +115,7 @@
     position: relative;
     z-index: 1;
     max-width: 100%;
-    padding: 20px;
+    padding: 17px;
     background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
     border-radius: 10px; /* Opcional: para bordes redondeados */
   }
@@ -131,11 +131,13 @@
   .texto-banner p {
     font-size: 16px;
     padding-top: 20px;
+    padding-bottom: 100px;
   }
 
   .cta-button {
     margin-top: 15px;
     padding: 8px 18px;
     font-size: 14px;
+  
   }
 }
