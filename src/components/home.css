@@ -1,4 +1,5 @@
-/* Estilos para la sección Home */
+/* Archivo home.css */
+
 .home-section {
   background-color: #1e2326;  /* Color de fondo */
   color: #fff;  /* Color del texto */
@@ -99,7 +100,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 90%; /* Coloca la imagen detrás del texto */
+    z-index: 0; /* Coloca la imagen detrás del texto */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,13 +134,11 @@
   .texto-banner p {
     font-size: 16px;
     padding-top: 20px;
-    padding-bottom: px;
   }
 
   .cta-button {
     margin-top: 15px;
     padding: 8px 18px;
     font-size: 14px;
-  
   }
 }
