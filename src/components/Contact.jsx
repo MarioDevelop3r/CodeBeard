@@ -15,19 +15,30 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          {/* Formulario */}
           <div className="col">
-            <input type="text" placeholder="Tu Nombre" />
-            <input type="text" placeholder="Número telefónico" />
-            <input type="text" placeholder="Dirección de correo" />
-            <input type="text" placeholder="Tema" />
-            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <form>
+              <label htmlFor="name">Tu Nombre</label>
+              <input type="text" id="name" placeholder="Tu Nombre" />
+              
+              <label htmlFor="phone">Número telefónico</label>
+              <input type="tel" id="phone" placeholder="Número telefónico" />
+              
+              <label htmlFor="email">Dirección de correo</label>
+              <input type="email" id="email" placeholder="Dirección de correo" />
+              
+              <label htmlFor="subject">Tema</label>
+              <input type="text" id="subject" placeholder="Tema" />
+              
+              <label htmlFor="message">Mensaje</label>
+              <textarea id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+              
+              <button type="submit" className="enviar-mensaje">
+                Enviar Mensaje<i className="fa-solid fa-paper-plane"></i>
+                <span className="overlay"></span>
+              </button>
+            </form>
           </div>
         </div>
-        <button className="enviar-mensaje">
-          Enviar Mensaje<i className="fa-solid fa-paper-plane"></i>
-          <span className="overlay"></span>
-        </button>
       </div>
     </section>
   );

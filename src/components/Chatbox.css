@@ -7,27 +7,32 @@
 .contacto .contenido-seccion {
   max-width: 1100px;
   margin: auto;
-  text-align: center; /* Centrar el texto dentro del contenedor */
+  text-align: center;
 }
 
 .contacto h2 {
   font-size: 48px;
   font-family: 'Righteous', cursive;
-  text-align: center;
   padding: 20px 0;
 }
 
 .contacto .fila {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centrar horizontalmente las columnas */
-  gap: 20px; /* Espacio entre las columnas */
+  justify-content: center;
+  gap: 20px;
 }
 
 .contacto .col {
   flex: 1;
   padding: 20px;
-  max-width: 500px; /* Limitar el ancho máximo de las columnas */
+  max-width: 500px;
+}
+
+.contacto .col label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
 .contacto .col input, 
@@ -39,10 +44,16 @@
   border: none;
   outline: none;
   color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contacto .col input:focus, 
+.contacto .col textarea:focus {
+  background-color: #3b4043;
+  transform: scale(1.02);
 }
 
 .contacto .col textarea {
-  height: 180px;
   resize: none;
 }
 
@@ -67,9 +78,55 @@
   height: 100%;
   background-color: #1CB698;
   z-index: -1;
-  transition: 1s;
+  transition: width 1s;
 }
 
 .contacto .enviar-mensaje:hover .overlay {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contacto .contenido-seccion {
+    text-align: left;
+  }
+
+  .contacto h2 {
+    font-size: 36px;
+  }
+
+  .contacto .fila {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto .col {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contacto .col input, 
+  .contacto .col textarea {
+    padding: 10px;
+  }
+
+  .contacto .enviar-mensaje {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacto h2 {
+    font-size: 28px;
+  }
+
+  .contacto .col input, 
+  .contacto .col textarea {
+    padding: 8px;
+  }
+
+  .contacto .enviar-mensaje {
+    font-size: 16px;
+  }
 }
