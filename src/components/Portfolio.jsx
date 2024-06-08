@@ -3,7 +3,7 @@ import "../components/portfolio.css";
 const Portfolio = () => {
     // Array de imágenes aleatorias
     const randomImages = [
-        "https://picsum.photos/300?random=1",
+        "https://i.imgur.com/LPFx4mo.png",
         "https://picsum.photos/300?random=2",
         "https://picsum.photos/300?random=3",
         "https://picsum.photos/300?random=4",
