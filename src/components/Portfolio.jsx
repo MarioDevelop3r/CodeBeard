@@ -1,7 +1,6 @@
 import "../components/portfolio.css";
 
 const Portfolio = () => {
-    // Array de imágenes aleatorias con enlaces y descripciones
     const randomImages = [
         { 
             url: "https://i.imgur.com/LPFx4mo.png", 
@@ -45,11 +44,10 @@ const Portfolio = () => {
             <div className="contenido-seccion">
                 <h2>PORTAFOLIO</h2>
                 <div className="galeria">
-                    {/* Mapeo de las imágenes aleatorias */}
                     {randomImages.map((image, index) => (
                         <div className="proyecto" key={index}>
-                            <a href={image.link} target="_blank" rel="noopener noreferrer">
-                                <img src={image.url} alt={`Proyecto ${index + 1}`} />
+                            <a href={image.link} target="_blank" rel="noopener noreferrer" aria-label={image.title}>
+                                <img src={image.url} alt={image.description} />
                                 <div className="overlay">
                                     <h3>{image.title}</h3>
                                     <p>{image.description}</p>
@@ -64,3 +62,4 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
+
