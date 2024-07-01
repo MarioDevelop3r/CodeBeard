@@ -1,8 +1,52 @@
-# React + Vite
+# Sitio Personal en Construcción
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un sitio web personal que actualmente está en construcción. El objetivo de este sitio es presentar un portafolio, información de contacto y otros detalles relevantes sobre mí.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- React Router DOM
+
+## Estructura del Proyecto
+
+El proyecto se estructura en varios componentes, cada uno con una función específica:
+
+- **Header**: Encabezado del sitio.
+- **Home**: Página principal.
+- **Portfolio**: Sección que muestra el portafolio.
+- **Contact**: Sección de contacto.
+- **Footer**: Pie de página.
+- **Whatsapp**: Componente para la integración de WhatsApp.
+
+## Código Principal
+
+El siguiente es el código principal del proyecto, que integra todos los componentes mencionados:
+
+```javascript
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Portfolio from './components/Portfolio';
+import Whatsapp from './components/Whatsapp';
+import Home from './components/Home';
+
+const App = () => {
+  return (
+    <>
+      <Router>
+        <Whatsapp />
+        <div>
+          <Header />
+          <Home />
+          <Portfolio />
+          <Contact />
+          <Footer />
+        </div>
+      </Router>
+    </>
+  );
+}
+
+export default App;
