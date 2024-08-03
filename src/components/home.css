@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   max-width: 1100px;
-  margin: auto;
+  margin: 10px auto;  /* Centra el contenido */
   gap: 20px;  /* Espacio entre la imagen y el texto */
   position: relative;
 }
@@ -31,7 +31,7 @@
 .texto-banner {
   flex: 1;
   padding-top: 20px;
-  padding: 20px;
+  max-width: 100%;
   border-radius: 10px; /* Opcional: para bordes redondeados */
 }
 
@@ -39,7 +39,7 @@
   font-size: 58px;
   font-family: 'Righteous', cursive;
   margin-bottom: 20px;
-  padding-top: 100px;
+  padding-top: 10px;
   text-align: center;
 }
 

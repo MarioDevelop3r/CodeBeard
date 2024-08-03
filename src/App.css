@@ -11,7 +11,7 @@ html{
 }
 /* MENU */
 .contenedor-header{
-    background: black;
+    background: red;
     position: fixed;
     width: 100%;
     top: 0;
@@ -82,7 +82,7 @@ html{
     border: 3px solid #1CB698;
     display: block;
     width: 80%;
-    margin: auto;
+    margin: 10px;
     border-radius: 100%;
 }
 .inicio .contenido-banner h1{
