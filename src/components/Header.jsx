@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './header.css'; // Importa los estilos desde un archivo CSS
-import menuIconOpen from "../../public/cross_3917050.png"; // Importa la imagen para el menú abierto
-import menuIconClosed from "../../public/align-justify_3917034 (2).png"; // Importa la imagen para el menú cerrado
+import menuIconOpen from '../../public/cross_3917050.png'; // Importa la imagen para el menú abierto
+import menuIconClosed from '../../public/align-justify_3917034 (2).png'; // Importa la imagen para el menú cerrado
 
 const Header = () => {
     const [menuVisible, setMenuVisible] = useState(false);
@@ -28,7 +28,7 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div className="nav-responsive" onClick={mostrarOcultarMenu}>
-                    <img src={menuVisible ? menuIconOpen : menuIconClosed} alt="Menu Icon" />
+                    <img src={menuVisible ? menuIconOpen : menuIconClosed} alt="Icono del menú" />
                 </div>
             </header>
         </div>
@@ -36,5 +36,6 @@ const Header = () => {
 };
 
 export default Header;
+
 
 

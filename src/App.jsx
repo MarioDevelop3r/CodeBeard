@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Whatsapp from './components/Whatsapp';
 import Home from './components/Home';
+import Servicios from './components/Services';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Home />
           <Portfolio />
           <Contact />
+          <Servicios />
           <Footer />
         </div>
       </Router>

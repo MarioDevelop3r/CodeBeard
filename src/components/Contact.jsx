@@ -1,4 +1,4 @@
-import "../components/Chatbox.css";
+
 
 const Contact = () => {
   return (
@@ -18,19 +18,19 @@ const Contact = () => {
           <div className="col">
             <form>
               <label htmlFor="name">Tu Nombre</label>
-              <input type="text" id="name" placeholder="Tu Nombre" />
+              <input type="text" id="name" placeholder="Tu Nombre" required />
               
               <label htmlFor="phone">Número telefónico</label>
-              <input type="tel" id="phone" placeholder="Número telefónico" />
+              <input type="tel" id="phone" placeholder="Número telefónico" required />
               
               <label htmlFor="email">Dirección de correo</label>
-              <input type="email" id="email" placeholder="Dirección de correo" />
+              <input type="email" id="email" placeholder="Dirección de correo" required />
               
               <label htmlFor="subject">Tema</label>
-              <input type="text" id="subject" placeholder="Tema" />
+              <input type="text" id="subject" placeholder="Tema" required />
               
               <label htmlFor="message">Mensaje</label>
-              <textarea id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+              <textarea id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
               
               <button type="submit" className="enviar-mensaje">
                 Enviar Mensaje<i className="fa-solid fa-paper-plane"></i>
@@ -45,4 +45,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 

@@ -1,20 +1,14 @@
 
 
 const Rrss = () => {
-    const userRss= [
-        { name: 'facebook', url: 'https://www.facebook.com/donMarioxD'},
-        { name: 'instagram', url: 'https://www.instagram.com/rojasmario/'},
-        { name: 'github', url: 'https://github.com/MarioDevelop3r'},
-        { name: 'linkedin', url: 'https://www.linkedin.com/in/mario-rojas-0990a9182/'},
-        { name: 'youtube', url: ''}
+    const userRss = [
+        { name: 'github', url: 'https://github.com/MarioDevelop3r' },
+        { name: 'linkedin', url: 'https://www.linkedin.com/in/mario-rojas-0990a9182/' }
     ];
 
     const icons = [
-        { name: 'facebook', src: "https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" },
-        { name: 'instagram', src: "https://img.icons8.com/?size=100&id=tN8gey28ngcJ&format=png&color=000000"  },
-        { name: 'github', src: "https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000"  },
-        { name: 'linkedin', src: "https://img.icons8.com/?size=100&id=114445&format=png&color=000000"  },
-        { name: 'youtube', src: "https://img.icons8.com/?size=100&id=19318&format=png&color=000000"}
+        { name: 'github', src: "https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000" },
+        { name: 'linkedin', src: "https://img.icons8.com/?size=100&id=114445&format=png&color=000000" }
     ];
 
     return (
@@ -23,7 +17,7 @@ const Rrss = () => {
                 // Encuentra la URL correspondiente en userRss
                 const rssUrl = userRss.find(rss => rss.name === icon.name)?.url;
                 return (
-                    <a href={rssUrl} key={index}>
+                    <a href={rssUrl} key={index} target="_blank" rel="noopener noreferrer" aria-label={icon.name}>
                         <img src={icon.src} alt={icon.name} />
                     </a>
                 );
@@ -33,6 +27,7 @@ const Rrss = () => {
 }
 
 export default Rrss;
+
 
 
 

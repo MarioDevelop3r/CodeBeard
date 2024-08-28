@@ -1,36 +1,47 @@
-// ChatBox.jsx
-import { useState } from 'react';
-import './Chatbox.css';
-import whatsappIcon from '../assets/img/whatsapp.png';
 
-const ChatBox = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleChatBox = () => {
-    setIsOpen(!isOpen);
-  };
-
+const Contact = () => {
   return (
-    <div className={`chatbox-container ${isOpen ? 'open' : ''}`}>
-      <div className={`whatsapp-button ${isOpen ? 'open' : ''}`} onClick={toggleChatBox}>
-        <img src={whatsappIcon} alt="WhatsApp Icon" />
-      </div>
-      {isOpen && (
-        <div className="chatbox-content">
-          {/* Aquí colocarás el contenido del chat, como mensajes, entrada de texto, etc. */}
-          <div className="message-container">
-            {/* Mensajes */}
+    <section id="contacto" className="contacto">
+      <div className="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div className="fila">
+          <div className="col">
+            <div className="contacto-content">
+              <h1>Lleva tu idea al siguiente nivel.</h1>
+              <div>
+                <p>En CodeBeard, estamos comprometidos a maximizar el potencial de las tecnologías avanzadas. Nuestro equipo de expertos en desarrollo está listo para transformar tus ideas en realidades digitales innovadoras. Nos especializamos en soluciones personalizadas que superan tus expectativas.</p>
+                <p>Contáctanos para conversar sobre tu proyecto y descubrir cómo podemos llevarlo al siguiente nivel. Queremos entender tus necesidades y objetivos para ofrecerte la mejor estrategia. Déjanos tu información y nos pondremos en contacto contigo muy pronto para iniciar esta emocionante aventura juntos.</p>
+              </div>
+            </div>
           </div>
-          <div className="input-container">
-            <input type="text" placeholder="Escribe tu mensaje aquí..." />
-            {/* Puedes eliminar este botón si deseas que la única forma de cerrar sea haciendo clic en el botón de WhatsApp */}
-            <button onClick={toggleChatBox}>Cerrar</button>
+          <div className="col">
+            <form>
+              <label htmlFor="name">Tu Nombre</label>
+              <input type="text" id="name" placeholder="Tu Nombre" />
+              
+              <label htmlFor="phone">Número telefónico</label>
+              <input type="tel" id="phone" placeholder="Número telefónico" />
+              
+              <label htmlFor="email">Dirección de correo</label>
+              <input type="email" id="email" placeholder="Dirección de correo" />
+              
+              <label htmlFor="subject">Tema</label>
+              <input type="text" id="subject" placeholder="Tema" />
+              
+              <label htmlFor="message">Mensaje</label>
+              <textarea id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+              
+              <button type="submit" className="enviar-mensaje">
+                Enviar Mensaje<i className="fa-solid fa-paper-plane"></i>
+                <span className="overlay"></span>
+              </button>
+            </form>
           </div>
         </div>
-      )}
-    </div>
+      </div>
+    </section>
   );
 };
 
-export default ChatBox;
-
+export default Contact;
