@@ -7,8 +7,8 @@ const Rrss = () => {
     ];
 
     const icons = [
-        { name: 'github', src: "https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000" },
-        { name: 'linkedin', src: "https://img.icons8.com/?size=100&id=114445&format=png&color=000000" }
+        { name: 'github', src: "../../public/SkillIconsGithubDark.png" },
+        { name: 'linkedin', src: "../../public/SkillIconsLinkedin.png" }
     ];
 
     return (

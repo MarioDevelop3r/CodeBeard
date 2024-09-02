@@ -1,46 +1,27 @@
-import Rrss from './Rrss.jsx';
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 
 const Footer = () => {
   return (
     <footer id="footer" className="footer">
       <div className="contenido-footer">
-        {/* Información de Contacto */}
-        <div className="footer-seccion">
-          <h4>Contacto</h4>
-          <p>Email: <a href="mailto:contacto@codebeard.com">contacto@codebeard.com</a></p>
-          <p>Teléfono: <a href="tel:+34123456789">+34 123 456 789</a></p>
-          <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-        </div>
-
-        {/* Enlaces Rápidos */}
-        <div className="footer-seccion">
-          <h4>Enlaces Rápidos</h4>
-          <ul className="enlaces">
-            {["Inicio", "Sobre Nosotros", "Servicios", "Portafolio", "Contacto"].map((link, index) => (
-              <li key={index}>
-                <a href={`#${link.toLowerCase().replace(/ /g, '-')}`}>{link}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Políticas */}
-        <div className="footer-seccion">
-          <h4>Políticas</h4>
-          <ul className="enlaces">
-            {["Política de Privacidad", "Términos de Servicio"].map((policy, index) => (
-              <li key={index}>
-                <a href={`#${policy.toLowerCase().replace(/ /g, '-')}`}>{policy}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
         {/* Redes Sociales */}
-        <div className="footer-seccion">
+        <div className="footer-seccion redes-sociales">
           <h4>Síguenos</h4>
-          <Rrss />
+          <div className="redes">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <FaFacebookF />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <FaTwitter />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedinIn />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -53,3 +34,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -1,11 +1,9 @@
-import "../components/portfolio.css";
-
 const Portfolio = () => {
     const randomImages = [
         {
             url: "https://i.imgur.com/LPFx4mo.png",
             link: "https://twitercard.netlify.app/",
-            title: "Twitwer Cards",
+            title: "Twitter Cards",
             description: "Diseño de tarjetas de Twitter"
         },
         {
@@ -18,26 +16,28 @@ const Portfolio = () => {
             url: "https://picsum.photos/300?random=3",
             link: "https://deploy-preview-1--sprightly-naiad-41d974.netlify.app/",
             title: "Encriptador de texto - Alura Challenges ONE",
-            description: "aplicación web que permite encriptar y desencriptar textos y funciones adicionales"
+            description: "Aplicación web que permite encriptar y desencriptar textos y funciones adicionales"
         },
         {
-            url: "https://picsum.photos/300?random=4",
-            link: "https://example.com/project4",
-            title: "Diseño Creativo 4",
-            description: "Fotografía 4"
+            url: "https://i.imgur.com/LPFx4mo.png",
+            link: "https://twitercard.netlify.app/",
+            title: "Twitter Cards",
+            description: "Diseño de tarjetas de Twitter"
         },
         {
-            url: "https://picsum.photos/300?random=5",
-            link: "https://example.com/project5",
-            title: "Diseño Creativo 5",
-            description: "Fotografía 5"
+            url: "https://i.imgur.com/8iShEQm.png",
+            link: "https://rick-morty-app-api.netlify.app/",
+            title: "Rick & Morty API",
+            description: "Consumo de API"
         },
         {
-            url: "https://picsum.photos/300?random=6",
-            link: "https://example.com/project6",
-            title: "Diseño Creativo 6",
-            description: "Fotografía 6"
-        }
+            url: "https://picsum.photos/300?random=3",
+            link: "https://deploy-preview-1--sprightly-naiad-41d974.netlify.app/",
+            title: "Encriptador de texto - Alura Challenges ONE",
+            description: "Aplicación web que permite encriptar y desencriptar textos y funciones adicionales"
+        },
+ 
+        // Más proyectos...
     ];
 
     return (
@@ -47,8 +47,8 @@ const Portfolio = () => {
                 <div className="galeria">
                     {randomImages.map((image, index) => (
                         <div className="proyecto" key={index}>
-                            <a href={image.link} target="_blank" rel="noopener noreferrer" aria-label={image.title}>
-                                <img src={image.url} alt={image.description} />
+                            <a href={image.link} target="_blank" rel="noopener noreferrer" aria-label={`Enlace a ${image.title}`}>
+                                <img src={image.url} alt={image.description} loading="lazy" />
                                 <div className="overlay">
                                     <h3>{image.title}</h3>
                                     <p>{image.description}</p>
@@ -63,4 +63,5 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
+
 
