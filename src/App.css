@@ -289,6 +289,7 @@ nav ul li a:hover {
 
 
 /* Estilos para el Portafolio */
+/* Estilos del Portafolio */
 .portafolio {
     padding: 50px 20px;
     background-color: var(--color-fondo);
@@ -303,6 +304,7 @@ nav ul li a:hover {
     font-family: var(--fuente-titulo);
 }
 
+/* Galería de Proyectos */
 .galeria {
     display: grid;
     gap: 30px;
@@ -357,9 +359,53 @@ nav ul li a:hover {
 }
 
 .overlay p {
-    margin: 0  0 10px;
+    margin: 0 0 10px;
     font-size: 0.9rem;
 }
+
+/* Responsividad para el Portafolio */
+@media (max-width: 1200px) {
+    .galeria {
+        grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: minmax(250px, 1fr);
+    }
+
+    .portafolio h2 {
+        font-size: 2rem;
+    }
+
+    .overlay h3 {
+        font-size: 1rem;
+    }
+
+    .overlay p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .portafolio {
+        padding: 30px 10px;
+    }
+
+    .portafolio h2 {
+        font-size: 1.5rem;
+    }
+
+    .overlay h3 {
+        font-size: 0.9rem;
+    }
+
+    .overlay p {
+        font-size: 0.7rem;
+    }
+}
+
 
 
 /* Estilos Responsivos para Banner */
